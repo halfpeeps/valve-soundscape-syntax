@@ -1,0 +1,29 @@
+{
+  "name": "valve-soundscape-syntax",
+  "displayName": "Valve Soundscape Syntax",
+  "description": "Syntax Highlighting for Valve Soundscape Files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+        {
+            "language": "soundscape",
+            "scopeName": "source.soundscape",
+            "path": "./syntaxes/soundscape.tmLanguage.json"
+        }
+    ],
+    "languages": [
+        {
+            "id": "soundscape",
+            "aliases": ["Soundscape"],
+            "extensions": [".txt"],
+            "configuration": "./language-configuration.json"
+        }
+    ]
+  }
+}

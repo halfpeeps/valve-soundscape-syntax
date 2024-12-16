@@ -1,0 +1,39 @@
+{
+    "scopeName": "source.soundscape",
+    "name": "Valve Soundscape",
+    "patterns": [
+        {
+            "name": "keyword.control.soundscape",
+            "match": "\\b(time|volume|pitch|position|attenuation|name)\\b"
+        },
+		{
+            "name": "entity.name.type.play.soundscape",
+            "match": "\\b(playrandom|playlooping|playsoundscape|rndwave)\\b"
+        },
+        {
+            "name": "variable.wave.soundscape",
+            "match": "\\bwave\\b"
+        },
+        {
+            "name": "entity.name.function.soundscape",
+            "match": "\\b(generic\\.[a-zA-Z0-9_]+)\\b"
+        },
+        {
+            "name": "string.path.wave.soundscape",
+            "begin": "(?<=\\bwave\\s+)\"",
+            "end": "\""
+        },
+        {
+            "name": "comment.line.double-slash.soundscape",
+            "match": "//.*$"
+        },
+        {
+            "name": "constant.numeric.soundscape",
+            "match": "\\b\\d+(\\.\\d+)?\\b"
+        },
+        {
+            "name": "punctuation.section.block.soundscape",
+            "match": "[{}]"
+        }
+    ]
+}
