@@ -1,8 +1,9 @@
 {
   "name": "valve-soundscape-syntax",
+  "publisher": "HALFPEEPS",
   "displayName": "Valve Soundscape Syntax",
   "description": "Syntax Highlighting for Valve Soundscape Files",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.96.0"
   },
