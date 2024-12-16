@@ -4,7 +4,7 @@
     "patterns": [
         {
             "name": "keyword.control.soundscape",
-            "match": "\\b(time|volume|pitch|position|attenuation|name)\\b"
+            "match": "\\b(time|volume|pitch|position|attenuation|name|dsp|fadetime|suppress_on_restore)\\b"
         },
 		{
             "name": "entity.name.type.play.soundscape",
@@ -13,10 +13,6 @@
         {
             "name": "variable.wave.soundscape",
             "match": "\\bwave\\b"
-        },
-        {
-            "name": "entity.name.function.soundscape",
-            "match": "\\b(generic\\.[a-zA-Z0-9_]+)\\b"
         },
         {
             "name": "string.path.wave.soundscape",
@@ -34,6 +30,28 @@
         {
             "name": "punctuation.section.block.soundscape",
             "match": "[{}]"
+        },
+
+
+        {
+            "name": "entity.name.function.soundscape",
+            "match": "\\b(generic\\.[a-zA-Z0-9_]+)\\b"
+        },
+        {
+            "name": "entity.name.function.soundscape",
+            "match": "\\b(city\\.[a-zA-Z0-9_]+)\\b"
+        },
+        {
+            "name": "entity.name.function.soundscape",
+            "match": "\\b(business\\.[a-zA-Z0-9_]+)\\b"
+        },
+        {
+            "name": "entity.name.function.soundscape",
+            "match": "\\b(forest\\.[a-zA-Z0-9_]+)\\b"
+        },
+        {
+            "name": "entity.name.function.soundscape",
+            "match": "\\b(subs\\.[a-zA-Z0-9_]+)\\b"
         }
     ]
 }
