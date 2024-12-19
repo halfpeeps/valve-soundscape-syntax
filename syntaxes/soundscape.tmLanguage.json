@@ -4,7 +4,7 @@
     "patterns": [
         {
             "name": "keyword.control.soundscape",
-            "match": "\\b(time|volume|pitch|position|attenuation|name|dsp|fadetime|suppress_on_restore)\\b"
+            "match": "\\b(time|volume|pitch|position|attenuation|name|dsp|dsp_volume|dsp_spatial|fadetime|suppress_on_restore|positionoverride|ambientpositionoverride)\\b"
         },
 		{
             "name": "entity.name.type.play.soundscape",
