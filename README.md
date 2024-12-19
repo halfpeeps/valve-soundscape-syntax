@@ -20,7 +20,11 @@ A basic syntatx highlighting extension for VSCODE to help with work on Valve Sou
  ***0.1.3***
  - Fixed README formatting
 
-**Contact me**
+  ***0.1.4***
+ - Small fix
+
+## **Contact me**
+
 Discord: *halfpeeps*
 
 Steam: https://steamcommunity.com/id/halfpeeps/
