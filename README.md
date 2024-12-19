@@ -17,7 +17,12 @@ A basic syntatx highlighting extension for VSCODE to help with work on Valve Sou
 ***0.1.2***
  - Added highlighting for dsp_volume, dsp_spatial, positionoverride and ambientpositionoverride
 
+ ***0.1.3***
+ - Fixed README formatting
+
 **Contact me**
 Discord: *halfpeeps*
+
 Steam: https://steamcommunity.com/id/halfpeeps/
+
 PERPHeads Forums: https://perpheads.com/members/peeps.10255/
