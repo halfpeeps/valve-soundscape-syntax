@@ -4,7 +4,7 @@
   "displayName": "Valve Soundscape Syntax",
   "description": "Syntax Highlighting for Source Engine soundscape and soundscript files",
   "icon": "images/icon.png",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -13,19 +13,26 @@
   ],
   "contributes": {
     "grammars": [
-        {
-            "language": "soundscape",
-            "scopeName": "source.soundscape",
-            "path": "./syntaxes/soundscape.tmLanguage.json"
-        }
+      {
+        "language": "soundscape",
+        "scopeName": "source.soundscape",
+        "path": "./syntaxes/soundscape.tmLanguage.json"
+      }
     ],
     "languages": [
-        {
-            "id": "soundscape",
-            "aliases": ["Soundscape"],
-            "extensions": [".txt"],
-            "configuration": "./language-configuration.json"
-        }
+      {
+        "id": "soundscape",
+        "aliases": ["Soundscape"],
+        "extensions": [".txt"],
+        "configuration": "./language-configuration.json"
+      }
     ]
+  },
+  "activationEvents": [
+    "onLanguage:soundscape"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc"
   }
 }

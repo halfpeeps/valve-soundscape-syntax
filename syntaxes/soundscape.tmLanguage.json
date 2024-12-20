@@ -3,6 +3,10 @@
     "name": "Valve Soundscape",
     "patterns": [
         {
+            "name": "entity.name.block.custom",
+            "match": "^[a-zA-Z0-9_.]+(?=\\s*\\{)"
+        },
+        {
             "name": "keyword.control.soundscape",
             "match": "\\b(time|volume|pitch|position|attenuation|name|dsp|dsp_volume|dsp_spatial|fadetime|suppress_on_restore|positionoverride|ambientpositionoverride|channel|soundlevel)\\b"
         },
