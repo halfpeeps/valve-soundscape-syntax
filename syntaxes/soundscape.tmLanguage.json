@@ -4,7 +4,7 @@
     "patterns": [
         {
             "name": "keyword.control.soundscape",
-            "match": "\\b(time|volume|pitch|position|attenuation|name|dsp|dsp_volume|dsp_spatial|fadetime|suppress_on_restore|positionoverride|ambientpositionoverride)\\b"
+            "match": "\\b(time|volume|pitch|position|attenuation|name|dsp|dsp_volume|dsp_spatial|fadetime|suppress_on_restore|positionoverride|ambientpositionoverride|channel|soundlevel)\\b"
         },
 		{
             "name": "entity.name.type.play.soundscape",
@@ -12,12 +12,11 @@
         },
         {
             "name": "variable.wave.soundscape",
-            "match": "\\bwave\\b"
+            "match": "\\b(?:wave|[A-Za-z0-9_/\\\\.-]+\\.(?:wav|mp3))\\b"
         },
         {
             "name": "string.path.wave.soundscape",
-            "begin": "(?<=\\bwave\\s+)\"",
-            "end": "\""
+            "match": "\\b(?:VOL|PITCH|CHAN|SNDLVL)_[A-Za-z0-9_]+\\b"
         },
         {
             "name": "comment.line.double-slash.soundscape",
@@ -31,7 +30,6 @@
             "name": "punctuation.section.block.soundscape",
             "match": "[{}]"
         },
-
 
         {
             "name": "entity.name.function.soundscape",

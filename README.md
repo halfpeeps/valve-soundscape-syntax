@@ -1,6 +1,5 @@
-
 # **valve-soundscape-syntax** 
-A basic syntatx highlighting extension for VSCODE to help with work on Valve Soundscapes in the Source engine
+A basic syntatx highlighting extension for VSCODE to help with work on Valve Soundscapes or soundscripts in the Source engine
 
 
 [VSCODE Marketplace](https://marketplace.visualstudio.com/items?itemName=HALFPEEPS.valve-soundscape-syntax)  
@@ -11,17 +10,27 @@ A basic syntatx highlighting extension for VSCODE to help with work on Valve Sou
 
 ## **Changelog**
 
-***0.1.1***
- - Added some missing syntaxes
- 
+***0.2.0***
+ - Added support for Valve soundscript files
+ - Added highlighting for .mp3/.wav file paths
+ - Removed legacy packages for smaller file size
+ - Reordered Changelog section of the readme
+
+***0.1.4***
+ - Small fix
+
+***0.1.3***
+ - Fixed README formatting
+
 ***0.1.2***
  - Added highlighting for dsp_volume, dsp_spatial, positionoverride and ambientpositionoverride
 
- ***0.1.3***
- - Fixed README formatting
+***0.1.1***
+ - Added some missing syntaxes
+ 
+------------
 
-  ***0.1.4***
- - Small fix
+
 
 ## **Contact me**
 

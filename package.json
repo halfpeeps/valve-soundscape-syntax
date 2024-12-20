@@ -2,9 +2,9 @@
   "name": "valve-soundscape-syntax",
   "publisher": "HALFPEEPS",
   "displayName": "Valve Soundscape Syntax",
-  "description": "Syntax Highlighting for Valve Soundscape Files",
+  "description": "Syntax Highlighting for Source Engine soundscape and soundscript files",
   "icon": "images/icon.png",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.96.0"
   },
