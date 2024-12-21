@@ -4,7 +4,7 @@
   "displayName": "Valve Soundscape Syntax",
   "description": "Syntax Highlighting for Source Engine soundscape and soundscript files",
   "icon": "images/icon.png",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "engines": {
     "vscode": "^1.96.0"
   },

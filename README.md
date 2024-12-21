@@ -10,6 +10,9 @@ A basic syntatx highlighting extension for VSCODE to help with work on Valve Sou
 
 ## **Changelog**
 
+***0.2.2***
+- Fixed sticky blocks not staying if another closing bracket is reachde
+
 ***0.2.1***
 - Soundscape names now stick to the top instead of brackets.  (For larger files it may take a few seconds to initialise)
 

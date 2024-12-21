@@ -36,28 +36,45 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.activate = activate;
 const vscode = __importStar(require("vscode"));
 function activate(context) {
-    context.subscriptions.push(vscode.languages.registerDocumentSymbolProvider({ language: 'soundscape' }, // Ensure this matches your language ID
-    new BlockSymbolProvider()));
+    context.subscriptions.push(vscode.languages.registerDocumentSymbolProvider({ language: 'soundscape' }, new BlockSymbolProvider()));
 }
 class BlockSymbolProvider {
     provideDocumentSymbols(document) {
         const symbols = [];
-        const blockPattern = /^[a-zA-Z0-9_.]+(?=\s*\{)/gm; // Regex for block names (like forest.suburbs_central)
+        const blockPattern = /^[a-zA-Z0-9_.]+(?=\s*\{)/gm;
         let match;
-        // Loop through the document to find blocks
         while ((match = blockPattern.exec(document.getText())) !== null) {
             const name = match[0];
             const startPos = document.positionAt(match.index);
             const blockStart = match.index;
-            let blockEnd = document.getText().indexOf('}', blockStart); // Find the closing brace for the block
+            let blockEnd = this.findMatchingBrace(document, blockStart);
             if (blockEnd === -1)
-                continue; // skip if no closing brace found
-            const endPos = document.positionAt(blockEnd + 1); // Adjust to include closing brace
-            const range = new vscode.Range(startPos, endPos); // Use the range from the block name to the closing brace
-            // Define the symbol with a larger range
+                continue;
+            const endPos = document.positionAt(blockEnd);
+            const range = new vscode.Range(startPos, endPos);
+            //console.log(`Block found: ${name} at range: ${range}`);
             const symbol = new vscode.DocumentSymbol(name, 'Block', vscode.SymbolKind.Module, range, range);
             symbols.push(symbol);
         }
         return symbols;
+    }
+    findMatchingBrace(document, startPos) {
+        const text = document.getText();
+        let balance = 0;
+        let i = startPos;
+        while (i < text.length) {
+            const char = text[i];
+            if (char === '{') {
+                balance++;
+            }
+            else if (char === '}') {
+                balance--;
+                if (balance === 0) {
+                    return i;
+                }
+            }
+            i++;
+        }
+        return -1;
     }
 }
