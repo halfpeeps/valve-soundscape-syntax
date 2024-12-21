@@ -10,6 +10,9 @@ A basic syntatx highlighting extension for VSCODE to help with work on Valve Sou
 
 ## **Changelog**
 
+***0.2.3***
+- Added "random" to the values that can precede "position"
+
 ***0.2.2***
 - Fixed sticky blocks not staying if another closing bracket is reachde
 

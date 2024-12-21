@@ -28,8 +28,8 @@
         },
         {
             "name": "constant.numeric.soundscape",
-            "match": "\\b\\d+(\\.\\d+)?\\b"
-        },
+            "match": "\\b(?:\\d+(\\.\\d+)?|random)\\b"
+        },        
         {
             "name": "punctuation.section.block.soundscape",
             "match": "[{}]"
